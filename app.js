@@ -26,7 +26,6 @@ const fromDollarToYen = (a)=>{
 console.log(fromDollarToYen(9));
 
 
-console.log(fromEuroToDollar(12));
 
 const fromYenToPound = (a)=>{
     let a = amountYen;
