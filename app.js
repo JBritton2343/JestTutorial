@@ -17,8 +17,9 @@ let oneEuroIs = {
     "USD": 1.2, //US Dollar
     "GBP": 0.8, //British Pound
 }
+let a = '';
 const fromDollarToYen = (a)=>{
-    let a = ''
+    
     let b = 1.2;
     let c = 127.9;
     return a * b / c;
