@@ -18,18 +18,14 @@ let oneEuroIs = {
     "GBP": 0.8, //British Pound
 }
 const fromDollarToYen = (a)=>{
-    let a = amountDollars;
+    let a = ''
     let b = 1.2;
     let c = 127.9;
     return a * b / c;
 };
 console.log(fromDollarToYen(9));
 
-const fromEuroToDollar = (a)=>{
-    let a = amountEuros;
-    let b = 1.2;
-    return a / b;
-};
+
 console.log(fromEuroToDollar(12));
 
 const fromYenToPound = (a)=>{
