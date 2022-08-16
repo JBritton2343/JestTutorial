@@ -29,7 +29,7 @@ console.log(fromDollarToYen(9));
 
 
 const fromYenToPound = (a)=>{
-    let a = amountYen;
+   
     let b = 127.9;
     let c = .8;
     return a * b / c
