@@ -1,4 +1,4 @@
-const {sum} = require('./app.js');
+const { sum } = require('./app.js');
 
 //first test
 test('adds 14 + 9 to equal 23', ()=>{
