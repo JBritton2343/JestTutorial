@@ -4,13 +4,12 @@ const fromEuroToDollar = function(valueInEuro){
     //return the dollar value
     return valueInDollar;
 }
-module.exports = {sum, fromEuroToDollar};
+
 
 const sum = (a,b)=>{
     return a + b
 }
 console.log(sum(7,3))
-
 
 let oneEuroIs = {
     "JPY": 127.9, //Japanese Yen
@@ -35,3 +34,4 @@ const fromYenToPound = (a)=>{
     return a * b / c
 };
 console.log(fromYenToPound(120000));
+module.exports={sum, fromEuroToDollar};
