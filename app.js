@@ -6,12 +6,11 @@ const fromEuroToDollar = function(valueInEuro){
 }
 module.exports = {sum, fromEuroToDollar};
 
-
-//const sum = (a,b)=>{
+const sum = (a,b)=>{
     return a + b
-//}
-//console.log(sum(7,3))
-//module.exports={sum};//
+}
+console.log(sum(7,3))
+module.exports={sum};
 
 let oneEuroIs = {
     "JPY": 127.9, //Japanese Yen
