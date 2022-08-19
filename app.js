@@ -1,9 +1,4 @@
-const fromEuroToDollar = function(valueInEuro){
-    // convert the given valueInEuro to dollars
-    let valueInDollar = valueInEuro * 1.2;
-    //return the dollar value
-    return valueInDollar;
-}
+
 
 
 const sum = (a,b)=>{
@@ -16,22 +11,29 @@ let oneEuroIs = {
     "USD": 1.2, //US Dollar
     "GBP": 0.8, //British Pound
 }
-let a = '';
-const fromDollarToYen = (a)=>{
+
+const fromDollarToYen = function(valueInEuro){
+    // convert given in Euros to Dollars
+    let valInDollars = valueInEuro * 1.2;
+    // covert value in Yen to dollars
+    let valInYen = valInDollars * 127.9;
+    // value in yen
+    return valInYen;
     
-    let b = 1.2;
-    let c = 127.9;
-    return a * b / c;
-};
-console.log(fromDollarToYen(9));
+}
+const fromEuroToDollar = function(valueInEuro){
+    // convert the given valueInEuro to dollars
+    let valueInDollar = valueInEuro * 1.2;
+    //return the dollar value
+    return valueInDollar;
+}
+const fromYenToPound = function (valueInEuro){
+    //convert given value in Yen to Euros;
+    let valueInEuro = valInYen / 127.9;
+    //covert value in Euro to Pounds;
+    let valinPounds = valueInEuro / .8;
+    //return value in Pounds
+    return valinPounds;
+}
 
-
-
-const fromYenToPound = (a)=>{
-   
-    let b = 127.9;
-    let c = .8;
-    return a * b / c
-};
-console.log(fromYenToPound(120000));
 module.exports={sum, fromEuroToDollar};

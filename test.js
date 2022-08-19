@@ -17,3 +17,34 @@ test("One euro should be 1.206 dollars", function(){
     // this is the comparison for the unit test
      expect(fromEuroToDollar(3.5)).toBe(4.2); //1 euro are 1.2 dolares, then 3.5 euros should be = (3.5 * 1.2)
 })
+test("One Euro should be 1.2 dollars", function(){
+    // importing function from js file
+    const { fromDollarsToYen } = require('./app.js') 
+
+    // if one Euro is 1.2 dollars, then 35 euros shouold be (35 * 1.2)
+    let valInDollars = 35 * 1.2;
+
+    // with that value set we can now test the coversion to yen
+    valInYen = valInDollars * 127.9;
+
+    // now we return the value in Yen
+    return valInYen;
+
+
+})
+
+test("One Euro is should be .8 pounds", function(){
+
+    //import function from js file
+    const{fromYenToPound}=require('./app.js')
+
+    //if one Euro is 127.9 Yen, then 10000000 yen should be (100000000 / 127.9)
+    let valueInEuro = 10000000 / 127.9;
+
+    // with the euros determined we can now convert that to Pounds
+    let valinPounds = valueInEuro / .8;
+
+    // now we return the value in Pounds
+    return valinPounds;
+
+})
