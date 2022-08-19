@@ -1,10 +1,9 @@
-//const { sum } = require('./app.js');
-
+const { sum } = require('./app.js');
 //first test
-//test('adds 14 + 9 to equal 23', ()=>{
-//let total=sum(14, 9);
-//expect(total).toBe(23);
-//});
+test('adds 14 + 9 to equal 23', ()=>{
+let total=sum(14, 9);
+expect(total).toBe(23);
+});
 test("One euro should be 1.206 dollars", function(){
     //import the function from app.js
     const { fromEuroToDollar } = require('./app.js')
