@@ -43,7 +43,7 @@ test("One Euro is should be .8 pounds", function(){
 
     //if one Euro is 127.9 Yen, then 10000000 yen should be (100000000 / 127.9)
     const yen = valInYen(10000000)
-    const valInYen = 10000000 / 127.9 
+    const valueInEuro = 10000000 / 127.9 
 
     // with the euros determined we can now convert that to Pounds
     const pounds = fromEuroToPounds(78186.08)
