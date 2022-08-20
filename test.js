@@ -29,7 +29,7 @@ test("One Euro should be 1.2 dollars", function(){
     const expected = 29.17 * 127.9;
 
     // now we return the value in Yen
-    expect(fromDollarToYen(29.17)).toBe(3109.04);
+    expect (Math.round((fromDollarToYen(29.17)*100)/100).toBe(3109.04));
 
 
 });
@@ -45,7 +45,7 @@ test("One Euro is should be .8 pounds", function(){
 
     // with the euros determined we can now convert that to Pounds
     const pounds = fromYenToPound(78186.08)
-    const expected = 78186.08 * .8
+    const valInPounds = valueInEuro * .8
 
     // now we return the value in Pounds
     expect(fromYenToPound(78186.08)).toBe(62548.86)

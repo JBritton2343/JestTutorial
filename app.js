@@ -31,9 +31,9 @@ const fromYenToPound = function (valInYen){
     //convert given value in Yen to Euros;
     let valueInEuro = valInYen / 127.9;
     //covert value in Euro to Pounds;
-    let valinPounds = valueInEuro / .8;
+    let valInPounds = valueInEuro / .8;
     //return value in Pounds
-    return valinPounds;
+    return valInPounds;
 }
 
 module.exports={sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};
