@@ -23,7 +23,7 @@ test("One Euro should be 1.2 dollars", function(){
 
     // if one Euro is 1.2 dollars, then 35 euros shouold be (35 * 1.2)
     const dollars = valueInEuro(35)
-    const euroConverted = 35 * 1.2
+    const valInDollars = 35 * 1.2
     expect(fromEuroToDollar(35)).toBe(42);
 
     // with that value set we can now test the coversion to yen
@@ -43,7 +43,7 @@ test("One Euro is should be .8 pounds", function(){
 
     //if one Euro is 127.9 Yen, then 10000000 yen should be (100000000 / 127.9)
     const yen = valInYen(10000000)
-    const yenConverted = 10000000 / 127.9 
+    const valInYen = 10000000 / 127.9 
 
     // with the euros determined we can now convert that to Pounds
     const pounds = fromEuroToPounds(78186.08)
