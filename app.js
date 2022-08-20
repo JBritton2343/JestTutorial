@@ -14,7 +14,7 @@ let oneEuroIs = {
 
 const fromDollarToYen = function(valueInEuro){
     // convert given in Euros to Dollars
-    let valInDollars = valueInEuro * 1.2;
+    let valInDollars = valueInEuro / 1.2;
     // covert value in Yen to dollars
     let valInYen = valInDollars * 127.9;
     // value in yen
@@ -36,4 +36,4 @@ const fromYenToPound = function (valInYen){
     return valinPounds;
 }
 
-module.exports={sum, fromEuroToDollar};
+module.exports={sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};
