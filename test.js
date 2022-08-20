@@ -22,12 +22,12 @@ test("One Euro should be 1.2 dollars", function(){
     const { fromDollarToYen } = require('./app.js') 
 
     // if one Euro is 1.2 dollars, then 35 euros shouold be (35 * 1.2)
-    const dollars = fromEuroToDollar(35)
-    
+    const dollars = valueInEuro(35)
+    const euroConverted = 35 * 1.2
     expect(fromEuroToDollar(35)).toBe(42);
 
     // with that value set we can now test the coversion to yen
-    const yen = fromDollarsToYen(42)
+    const yen = valInDollars(42)
     const expected = 42 *  127.9;
 
     // now we return the value in Yen
