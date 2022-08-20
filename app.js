@@ -27,7 +27,7 @@ const fromEuroToDollar = function(valueInEuro){
     //return the dollar value
     return valueInDollar;
 }
-const fromYenToPound = function (valueInEuro){
+const fromYenToPound = function (valInYen){
     //convert given value in Yen to Euros;
     let valueInEuro = valInYen / 127.9;
     //covert value in Euro to Pounds;
