@@ -29,7 +29,7 @@ test("One Euro should be 1.2 dollars", function(){
     const expected = 29.17 * 127.9;
 
     // now we return the value in Yen
-    expect (Math.round((fromDollarToYen(29.17)*100)/100).toBe(3109.04));
+    expect (Math.round((fromDollarToYen(29.17).toBe(3109.04)*100)/100));
 
 
 });
