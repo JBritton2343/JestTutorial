@@ -22,7 +22,7 @@ test("One Euro should be 1.2 dollars", function(){
     // if one Euro is 1.2 dollars, then 35 euros shouold be (35 * 1.2)
     
     const valInDollars = 35 / 1.2
-    
+    return valInDollars;
 
     // with that value set we can now test the coversion to yen
     const yen = valInDollars(42)
