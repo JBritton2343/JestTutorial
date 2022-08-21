@@ -17,38 +17,31 @@ test("One euro should be 1.206 dollars", function(){
     // this is the comparison for the unit test
      expect(fromEuroToDollar(3.5)).toBe(4.2); //1 euro are 1.2 dolares, then 3.5 euros should be = (3.5 * 1.2)
 });
-test("One Euro should be 1.2 dollars", function(){
+test("One Yen is 136.93 USD", function(){
+
+    // use the function as intended
+    const yen = fromDollarToYen(60);
+
+    // if one Dollar is 136.93 Yen
+    const expected = 60 * 136.93;
+
+    //comparison for the unit test
+    expect(fromDollarToYen(60)).toBe(1369.3);
+
+})
+
+test("One Pound Sterling is 161.95 Yen", function(){
+
+    //use the function properly
+    const pounds = fromYenToPound(1000);
+
+    //if one pound is 161.95 Yen
+    const expected = 10000 / 161.95
+
     
-    // if one Euro is 1.2 dollars, then 35 euros shouold be (35 * 1.2)
-    
-    const valInDollars = 35 / 1.2
-    
-
-    // with that value set we can now test the coversion to yen
-    const yen = fromDollarToYen(29.17)
-    const expected = 29.17 * 136.93;
-
-    // now we return the value in Yen
-    expect (Math.round((fromDollarToYen(29.17 *100)/100).toBe(3,994.24)));
-
-
-});
-
-test("One Euro is should be .8 pounds", function(){
-
-    
-
-    //if one Euro is 127.9 Yen, then 10000000 yen should be (100000000 / 127.9)
-    
-    const valueInEuro = 10000000 / 127.9
-    
-
-    // with the euros determined we can now convert that to Pounds
-    const pounds = fromYenToPound(78186.08)
-    const valInPounds = valueInEuro * .8
 
     // now we return the value in Pounds
-    expect(fromYenToPound(78186.08)).toBe(62548.86)
+    expect(Math.round(fromYenToPound(78186.08)).toBe(62548.86 * 100) /100);
 
 });
 module.exports={sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};

@@ -16,12 +16,9 @@ let oneYenIs = {
     "GBP": 161.95, //Brittish Pound Sterling
 }
 
-const fromDollarToYen = function(valueInEuro){
-    // convert given in Euros to Dollars
-    let valInDollars = valueInEuro / 1.2;
-    // covert value in Yen to dollars
-    let valInYen = valInDollars * 136.93;
-    // value in yen
+const fromDollarToYen = function(valInDollars){
+    //converting dollars to Yen
+    valInYen = valInDollars * 136.93
     return valInYen;
     
 }
@@ -32,11 +29,8 @@ const fromEuroToDollar = function(valueInEuro){
     return valueInDollar;
 }
 const fromYenToPound = function (valInYen){
-    //convert given value in Yen to Euros;
-    let valueInEuro = valInYen / 127.9;
-    //covert value in Euro to Pounds;
-    let valInPounds = valueInEuro * .8;
-    //return value in Pounds
+    // coverting Yen to GBP
+    valInPounds = valInYen / 161.95
     return valInPounds;
 }
 
