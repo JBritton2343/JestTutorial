@@ -26,10 +26,10 @@ test("One Euro should be 1.2 dollars", function(){
 
     // with that value set we can now test the coversion to yen
     const yen = fromDollarToYen(29.17)
-    const expected = 29.17 * 127.9;
+    const expected = 29.17 * 136.93;
 
     // now we return the value in Yen
-    expect (Math.round((fromDollarToYen(29.17).toBe(3109.04)*100)/100));
+    expect (Math.round((fromDollarToYen(29.17)*100)/100).toBe(3,994.24));
 
 
 });
