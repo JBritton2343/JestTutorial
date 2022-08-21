@@ -26,7 +26,7 @@ test("One Yen is 136.93 USD", function(){
     const expected = 60 * 136.93;
 
     //comparison for the unit test
-    expect(Math.round(fromDollarToYen(10000)*100)/100).toBe(61.74);
+    expect(Math.round(fromDollarToYen(60)*10)/10).toBe(8215.8);
 
 
 });
@@ -42,7 +42,7 @@ test("One Pound Sterling is 161.95 Yen", function(){
     
 
     // now we return the value in Pounds
-    expect(Math.round(fromYenToPound(10000)*100)/100).toBe(61.74);
+    expect(Math.round(fromYenToPound(10000)*100)/100).toBe(61.75);
 
 });
 module.exports={sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};
